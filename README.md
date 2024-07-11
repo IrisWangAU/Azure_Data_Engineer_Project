@@ -1,8 +1,5 @@
 <div align="center">
-  <a href="#">
-    <img src="" alt="Banner" width="720">
-  </a>
-
+  
   <div id="user-content-toc">
     <ul>
       <summary><h1 style="display: inline-block;"> Analyzing Sales of AdventureWorks </h1></summary>
@@ -10,6 +7,11 @@
   </div>
   
   <p>On-prem Microsoft SQL server to Azure Cloud Pipeline with Data Factory, Data Lake Storage, Databricks, Synapse and PowerBI</p>
+  
+  <a href="#">
+    <img src="https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/AWSaleReport.png">
+  </a>
+ 
 </div>
 <br>
 
@@ -63,7 +65,7 @@ Key aspects of AdventureWorks include:
   - **Top2:** Products with IDs between 710 and 725 were the second most popular, with around 50 units sold for each ID.
 
 - 🚻 **Customer by gender**
-  - There are 849 customers in total
+  - There are 847 customers in total
   - 41% of the customer are Female
   - 59% of the customers are Male
 
@@ -74,23 +76,23 @@ Key aspects of AdventureWorks include:
 
 You can find the detailed information on the diagram below:
 
-![AW_Architecture]()
+![AW_Architecture](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ProjectArchitecture.png)
 
 <a name="data-ingestion"></a>
 ### 📤 Data Ingestion
 - Connected the on-premise SQL Server with Azure using Microsoft Integration Runtime.
 
-![SHIR]()
+![SHIR](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/SHIR.PNG)
 
 - Setup the **Resource group** with Azure services (Key Vault, Storage Account, Data Factory, Databricks, Synapse Analytics)
 
-![ressource-group]()
+![ressource-group](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ResourceGroup.PNG)
 
 - Migrated the tables from on-premise SQL Server to Azure Data Lake Storage Gen2.
 - Containers in storage account: **bronze** for raw data migrated from on premise SQL server, **silver** for data after level 1 transformation, **gold** for data after level 2 transformation (clean format)
 - Folder structure in containers: container_name/schema_name/table_name/table_name.parquet. e.g. bronze/SalesLT/Customer/Customer.parquet.
-![containers]()
-![ADFpipeline1]()
+![containers](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/containers.PNG)
+![ADFpipeline1](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ADFpipeline1.png)
 
 <a name="data-transformation"></a>
 ### ⚙️ Data Transformation
@@ -102,11 +104,11 @@ You can find the detailed information on the diagram below:
 - Save the cleaned data in a Delta format; optimized for further analysis.
 - Build a complete pipeline in Azure Data Factory to include the Data Bricks Transfromation
 
-![DB_storagemount]()
-![level1transform1]()
-![level1transform2]()
-![level2transform]()
-![ADFpipeline2]()
+![DB_storagemount](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/db_storagemount.png)
+![level1transform1](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/level1T1.png)
+![level1transform2](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/level1T2.png)
+![level2transform](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/level2T.png)
+![ADFpipeline2](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ADFpipeline.png)
 
 
 <a name="data-loading"></a>
@@ -115,17 +117,17 @@ You can find the detailed information on the diagram below:
 - Create a Serverless SQL Pool to load transformed data using Azure Synapse Analytics.
 - Create Views for all tables using Stored Procedure Activity in Azure Synapse Analytics.
 
-![synapse-pipeline]()
-![stored_procedure]()
-![views]()
+![synapse-pipeline](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/synapse_pipeline.png)
+![stored_procedure](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/SP-createViews.png)
+![views](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/views.png)
 
 <a name="data-reporting"></a>
 ### 📊 Data Reporting
 - Connected Microsoft Power BI to Azure Synapse, and used the Views of the DB to create interactive and insightful data visualizations.
 - Use slicing to get report for states (for example Califonia)
 
-![AWsalesreport]()
-![AWsalesreport_california]()
+![AWsalesreport](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/AWSaleReport.png)
+![AWsalesreport_california](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/AWSaleReport_Califonia.png)
 
 <a name="pipeline-testing"></a>
 ### ⚙️ Pipeline Testing
@@ -133,9 +135,9 @@ You can find the detailed information on the diagram below:
 - Set a Schedule trigger for the Azure Data Factory pipeline.
 - Check the PowerBI for change in the Customer Number.
 
-![trigger]()
-![addrows]()
-![powerbi3]()
+![trigger](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/trigger.png)
+![addrows](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/addrows.png)
+![powerbi3](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/powerbi3.png)
 
 
 ### 🛠️ Technologies Used
