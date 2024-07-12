@@ -15,7 +15,7 @@
 </div>
 <br>
 
-##📝 Table of Contents
+## 📝 Table of Contents
 
 1. [Introduction](#introduction)
 2. [Key Insights](#key-insights)
@@ -29,13 +29,14 @@
 5. [Contact](#contact)
 
 <br>
+
 <a name="introduction"></a>
 ##🔬 Project Overview 
 
 This is a comprehensive data engineering project on the Azure Cloud encompassing data ingestion, transformation, loading, reporting, as well as pipeline testing and data security and governance. Data were uploaded from an on-premise SQL server to Azure Data Lake Storage Gen 2 using Azure Data Factory, and then transformed using Azure Databricks. Subsequently, the data were loaded into Azure Synapse Analytics Serverless SQL pool as views and linked to PowerBI for reporting. Finally, the pipeline in Data Factory was tested with a scheduled trigger, incorporating new rows input into the on-premise database. The successful execution of the pipeline was confirmed through the PowerBI report.
 
 
-###💾 Dataset
+### 💾 Dataset
 
 **AdventureWorks** is a free database provided by Microsoft on online platforms. Initially published to showcase the design of a SQL Server database using SQL Server 2008, it serves as a product sample database.
 
@@ -47,7 +48,8 @@ Key aspects of AdventureWorks include:
 > For this project, I used the **AdventureWorksLT2017** dataset. Lightweight (LT) data refers to a streamlined version of the OLTP sample. [Download here](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 
 <br>
-###🎯 Project Goals
+
+### 🎯 Project Goals
 
 - Establish a connection between the on-premise SQL Server and the Azure Cloud.
 - Ingest tables into Azure Data Lake Storage Gen 2.
@@ -58,8 +60,9 @@ Key aspects of AdventureWorks include:
 
 
 <br>
+
 <a name="key-insights"></a>
-##🕵️ Key Insights
+## 🕵️ Key Insights
 
 - 💸 **Total Revenue and Products sold**
   - On 2008-06-01, a total of 32 sales orders generated revenue of $708.69K, with approximately 2000 products sold.
@@ -77,16 +80,18 @@ Key aspects of AdventureWorks include:
 
 
 <br>
+
 <a name="project-architecture"></a>
-##📝 Project Architecture
+## 📝 Project Architecture
 
 You can find the detailed information on the diagram below:
 
 ![AW_Architecture](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ProjectArchitecture.png)
 
 <br>
+
 <a name="data-ingestion"></a>
-###📤 Data Ingestion
+### 📤 Data Ingestion
 - Connected the on-premise SQL Server with Azure using Microsoft Integration Runtime.
 
 ![SHIR](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/SHIR.PNG)
@@ -102,6 +107,7 @@ You can find the detailed information on the diagram below:
 ![ADFpipeline1](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ADFpipeline1.png)
 
 <br>
+
 <a name="data-transformation"></a>
 ### ⚙️ Data Transformation
 
@@ -119,8 +125,9 @@ You can find the detailed information on the diagram below:
 ![ADFpipeline2](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ADFpipeline.png)
 
 <br>
+
 <a name="data-loading"></a>
-###📥 Data Loading
+### 📥 Data Loading
 
 - Create a Serverless SQL Pool to load transformed data using Azure Synapse Analytics.
 - Create Views for all tables using Stored Procedure Activity in Azure Synapse Analytics.
@@ -130,8 +137,9 @@ You can find the detailed information on the diagram below:
 ![views](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/views.png)
 
 <br>
+
 <a name="data-reporting"></a>
-###📊 Data Reporting
+### 📊 Data Reporting
 - Connected Microsoft Power BI to Azure Synapse, and used the Views of the DB to create interactive and insightful data visualizations.
 - Use slicing to get report for states (for example Califonia)
 
@@ -150,8 +158,9 @@ You can find the detailed information on the diagram below:
 ![powerbi3](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/powerbi3.png)
 
 <br>
+
 <a name="technology"></a>
-##🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - **Data Source**: Microsoft SQL Server
 - **Data Storage**: Azure Data Lake Gen2
@@ -162,7 +171,8 @@ You can find the detailed information on the diagram below:
 - **Authentication and Secrets Management**: Azure Active Directory and Azure Key Vault
 
 <br>
-###📋 Credits
+
+### 📋 Credits
 
 - This Project is inspired by the video of the [YouTube Channel "Mr. K Talks Tech"](https://www.youtube.com/watch?v=iQ41WqhHglk)  
 <br>
