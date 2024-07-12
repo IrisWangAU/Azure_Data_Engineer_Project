@@ -27,6 +27,7 @@
 4. [Technologies Used](#technology)
 5. [Contact](#contact)
 
+<br>
 <a name="introduction"></a>
 ## 🔬 Project Overview 
 
@@ -54,6 +55,8 @@ Key aspects of AdventureWorks include:
 - Create interactive data visualizations and reports with Microsoft Power BI.
 - Implement Azure Active Directory (Microsoft Entra ID) and Azure Key Vault for data sercurity and governance.
 
+
+<br>
 <a name="key-insights"></a>
 ## 🕵️ Key Insights
 
@@ -71,6 +74,8 @@ Key aspects of AdventureWorks include:
 
 > This can be explained by males have more interest in doing outdoor activites with the different categories of Bikes than females.
 
+
+<br>
 <a name="project-architecture"></a>
 ## 📝 Project Architecture
 
@@ -78,6 +83,7 @@ You can find the detailed information on the diagram below:
 
 ![AW_Architecture](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ProjectArchitecture.png)
 
+<br>
 <a name="data-ingestion"></a>
 ### 📤 Data Ingestion
 - Connected the on-premise SQL Server with Azure using Microsoft Integration Runtime.
@@ -94,6 +100,7 @@ You can find the detailed information on the diagram below:
 ![containers](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/containers.PNG)
 ![ADFpipeline1](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ADFpipeline1.png)
 
+<br>
 <a name="data-transformation"></a>
 ### ⚙️ Data Transformation
 
@@ -110,7 +117,7 @@ You can find the detailed information on the diagram below:
 ![level2transform](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/level2T.png)
 ![ADFpipeline2](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/ADFpipeline.png)
 
-
+<br>
 <a name="data-loading"></a>
 ### 📥 Data Loading
 
@@ -121,6 +128,7 @@ You can find the detailed information on the diagram below:
 ![stored_procedure](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/SP-createViews.png)
 ![views](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/views.png)
 
+<br>
 <a name="data-reporting"></a>
 ### 📊 Data Reporting
 - Connected Microsoft Power BI to Azure Synapse, and used the Views of the DB to create interactive and insightful data visualizations.
@@ -129,6 +137,7 @@ You can find the detailed information on the diagram below:
 ![AWsalesreport](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/AWSaleReport.png)
 ![AWsalesreport_california](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/AWSaleReport_Califonia.png)
 
+<br>
 <a name="pipeline-testing"></a>
 ### ⚙️ Pipeline Testing
 - Add two more customer details to the on premise AdventureWorks database.
@@ -139,7 +148,7 @@ You can find the detailed information on the diagram below:
 ![addrows](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/addrows.png)
 ![powerbi3](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/powerbi3.png)
 
-
+<br>
 <a name="technology"></a>
 ## 🛠️ Technologies Used
 
@@ -151,11 +160,11 @@ You can find the detailed information on the diagram below:
 - **Data Visualization**: PowerBI
 - **Authentication and Secrets Management**: Azure Active Directory and Azure Key Vault
 
-
+<br>
 ### 📋 Credits
 
 - This Project is inspired by the video of the [YouTube Channel "Mr. K Talks Tech"](https://www.youtube.com/watch?v=iQ41WqhHglk)  
-
+<br>
 <a name="contact"></a>
 ## 📨 Contact Me
 
