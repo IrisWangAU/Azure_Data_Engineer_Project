@@ -45,7 +45,7 @@ Key aspects of AdventureWorks include:
 
 > For this project, I used the **AdventureWorksLT2017** dataset. Lightweight (LT) data refers to a streamlined version of the OLTP sample. [Download here](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 
-
+<br>
 ### 🎯 Project Goals
 
 - Establish a connection between the on-premise SQL Server and the Azure Cloud.
