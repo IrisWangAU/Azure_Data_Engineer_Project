@@ -24,7 +24,7 @@
   3.3. [Data Loading](#data-loading)  
   3.4. [Data Reporting](#data-reporting)
   3.5. [Pipeline Testing](#pipeline-testing)
-4. [Credits](#credits)
+4. [Technologies Used](#technology)
 5. [Contact](#contact)
 
 <a name="introduction"></a>
@@ -140,7 +140,8 @@ You can find the detailed information on the diagram below:
 ![powerbi3](https://github.com/IrisWangAU/Azure_Data_Engineer_Project/blob/main/asset/powerbi3.png)
 
 
-### 🛠️ Technologies Used
+<a name="technology"></a>
+## 🛠️ Technologies Used
 
 - **Data Source**: Microsoft SQL Server
 - **Data Storage**: Azure Data Lake Gen2
@@ -150,8 +151,8 @@ You can find the detailed information on the diagram below:
 - **Data Visualization**: PowerBI
 - **Authentication and Secrets Management**: Azure Active Directory and Azure Key Vault
 
-<a name="credits"></a>
-## 📋 Credits
+
+### 📋 Credits
 
 - This Project is inspired by the video of the [YouTube Channel "Mr. K Talks Tech"](https://www.youtube.com/watch?v=iQ41WqhHglk)  
 
