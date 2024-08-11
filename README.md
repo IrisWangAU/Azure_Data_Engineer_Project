@@ -2,7 +2,7 @@
   
   <div id="user-content-toc">
     <ul>
-      <summary><h1 style="display: inline-block;"> Analyzing Sales of AdventureWorks </h1></summary>
+      <summary><h1 style="display: inline-block;"> Sales Analysis for Adventure Works </h1></summary>
     </ul>
   </div>
   
