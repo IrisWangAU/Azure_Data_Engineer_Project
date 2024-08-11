@@ -179,7 +179,7 @@ You can find the detailed information on the diagram below:
 <br>
 
 <a name="contact"></a>
-##📨 Contact Me
+## 📨 Contact Me
 
 [LinkedIn](https://www.linkedin.com/in/iriswangau/) •
 [Gmail](iriswang.mel@gmail.com)
