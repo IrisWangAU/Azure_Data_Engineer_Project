@@ -175,7 +175,9 @@ You can find the detailed information on the diagram below:
 ### 📋 Credits
 
 - This Project is inspired by the video of the [YouTube Channel "Mr. K Talks Tech"](https://www.youtube.com/watch?v=iQ41WqhHglk)  
+
 <br>
+
 <a name="contact"></a>
 ##📨 Contact Me
 
